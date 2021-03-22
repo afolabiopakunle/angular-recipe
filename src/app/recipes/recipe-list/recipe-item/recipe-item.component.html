@@ -1,1 +1,14 @@
-<p>recipe-item works!</p>
+<a href="#" class="list-group-item list-group-item-action flex-column align-items-start active mb-2">
+<div class="d-flex w-100 justify-content-between">
+    <h5 class="mb-1">{{ recipe.name }}</h5>
+    <small class="text-dark"><a>{{ recipe.chef }}</a></small>
+</div>
+<div class="justify-content-between d-flex">
+    <div>
+        <p class="mb-1">{{ recipe.description }}</p>
+    </div>
+    <div style="max-width: 150px;">
+        <img src="{{ recipe.imageUrl }}" class="img-fluid" alt="{{ recipe.name }}">
+    </div>
+</div>
+</a>
