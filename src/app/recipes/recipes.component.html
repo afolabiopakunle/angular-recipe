@@ -2,7 +2,12 @@
     <div class="col-md-5">
         <app-recipe-list (sentRecipe)="invokeRecipe($event)"></app-recipe-list>
     </div>
-    <div class="col-md-7">
-        <app-recipe-detail ></app-recipe-detail>
+    <div class="col-md-7 d-flex align-items-center">
+        <app-recipe-detail *ngIf="recipeItems"[recipe]="recipeItems"></app-recipe-detail>
+        <div *ngIf="!recipeItems">
+                <div class="col-sm-12">
+                    <p class="text-center d-block">No recipe selected</p>
+                </div>
+        </div>
     </div>
 </div>

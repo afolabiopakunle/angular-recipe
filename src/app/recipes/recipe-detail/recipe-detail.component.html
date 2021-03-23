@@ -1,11 +1,11 @@
 <div class="row">
     <div class="col-sm-12">
-        <img src="" alt="">
+        <img style="width: 400px;" class="img-fluid rounded" src="{{ recipe.imageUrl }}" alt="">
     </div>
 </div>
 <div class="row">
     <div class="col-sm-12">
-        <h1>Recipe Name</h1>
+        <h1>{{ recipe.name }}</h1>
     </div>
 </div>
 <div class="row">
@@ -23,11 +23,11 @@
 
 <div class="row">
     <div class="col-sm-12">
-        Description
+        <p>{{ recipe.description }}</p>
     </div>
 </div>
 <div class="row">
     <div class="col-sm-12">
-        Ingredients
+        <p>{{ recipe.ingredient }}</p>
     </div>
 </div>

@@ -5,10 +5,10 @@
 </div>
 <div class="justify-content-between d-flex">
     <div>
-        <p class="mb-1">{{ recipe.description }}</p>
+        <p class="mb-1">{{ (recipe.description.length>120)? (recipe.description | slice:0:120) + '...': (recipe.description) }}</p>
     </div>
     <div style="max-width: 150px;">
-        <img src="{{ recipe.imageUrl }}" class="img-fluid" alt="{{ recipe.name }}">
+        <img src="{{ recipe.imageUrl }}" class="img-fluid rounded" alt="{{ recipe.name }}">
     </div>
 </div>
 </a>
